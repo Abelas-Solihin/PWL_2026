@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -129,5 +129,17 @@
                 </div>
             </div>
         </div>
+    </body>
+</html> --}}
+<!DOCTYPE html>
+<html lang= "{{ str_replace('_', '-', app() ->getlocale()) }}">
+    <head> 
+        <meta charset="utf-8">
+        <meta name ="Viewport" content = "width=device-width, initial-scale=1"> 
+        <title>PWL_2026</tittle>
+    </head>
+    <body>
+        <h2> Pemograman Web Lanjut 2026</h2>
+        <h2>Semangat Belajar Laravel 10 </h3>
     </body>
 </html>
