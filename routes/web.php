@@ -1,7 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ArticleController;
+
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/about', [AboutController::class, 'about']);
+Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,10 +27,6 @@ return 'World';
 
 Route::get('/', function () {
     return view ('welcome');
-});
-
-Route::get ('/', function() {
-    return ('Selamat Datang');
 });
 
 Route::get('/NIM_Nama', function(){
@@ -51,7 +55,6 @@ Route::get('/user/{name?}', function($name='John'){
 });
 
 
-use App\Http\Controllers\WelcomeController;
 
 Route::get('/hello', [WelcomeController::class, 'hello']);
 
