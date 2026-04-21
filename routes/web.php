@@ -62,5 +62,5 @@ use App\Http\Controllers\PhotoController;
 Route::resource('photos', PhotoController::class);
 
 Route::get('/greeting', function () { 
-return view('hello', ['name' => 'Abelas_Solihin']); 
+return view('blog.hello', ['name' => 'Abelas_Solihin']); 
 });
