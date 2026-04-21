@@ -58,3 +58,9 @@ Route::get('/user/{name?}', function($name='John'){
 
 Route::get('/hello', [WelcomeController::class, 'hello']);
 
+use App\Http\Controllers\PhotoController; 
+Route::resource('photos', PhotoController::class);
+
+Route::get('/greeting', function () { 
+return view('hello', ['name' => 'Abelas_Solihin']); 
+});
