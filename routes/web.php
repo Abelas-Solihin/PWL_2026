@@ -61,6 +61,6 @@ Route::get('/hello', [WelcomeController::class, 'hello']);
 use App\Http\Controllers\PhotoController; 
 Route::resource('photos', PhotoController::class);
 
-Route::get('/greeting', function () { 
+Route::get('/greeting', [WelcomeController::class, 'greeting'] ); { 
 return view('blog.hello', ['name' => 'Abelas_Solihin']); 
-});
+};
